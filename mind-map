@@ -1,0 +1,53 @@
+image processing application programming interface
+
+an api that can be used in two different ways.
+TWO DIFFERENT USE CASES
+- placeholder api
+    this allows me to place images into my frontend with the size set via URL parameters for rapid prototyping.
+- image-scaling library
+    to be used as a library to serve properly scaled versions of my images to the front end - this in order to reduce page load size.
+
+
+
+my api endpoints
+- [entry point]:=> the point of receiving a request containing the image-file and her set of parameters as a URL parameter for scaling. by parsing this => (?filename=argentina&width=200&height=200).
+
+- blackbox
+    1) first check if the received request already exists in the thumbnail folder 
+        if no:=> save details of the image and parameters in an object,
+        then:=> use an external module to process the image and then write the image into the thumbnail folder.
+        
+        if yes
+
+* every image in the thumbnail folder would be saved as an object. (*using interface as a template)
+
+- [exit point]:=> returns a page of the scaled image.
+
+
+*rather than needing to resize and upload multiple copies of the same image to be used throughout my site, the API I create will handle resizing and serving stored images for me.
+
+
+
+OBJECTIVES
+- ensure the code is as scalable as the architecture I create.
+
+type script
+unit testing
+linting
+formatting 
+
+code
+- easy to read
+- maintainable
+- less error-prone
+- easier to debug
+
+*understand that thousands will be interacting with my code and project
+
+YOU ARE BUILDING THIS BACKEND PROJECT FROM THE SCRATCH
+I COULD SCALE IT UP
+IT IS A VERY USEFUL PROJECT.
+
+
+***
+this project provides me a real-world scenario in which I will read and write to my
