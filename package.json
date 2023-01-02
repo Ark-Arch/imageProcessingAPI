@@ -6,7 +6,7 @@
   "scripts": {
     "prettier": "prettier --config ./.prettierrc src/**/*.ts --write",
     "lint": "eslint . --ext src/**/*.ts",
-    "standard": "npm run prettier && npm run lint",
+    "standardize": "npm run prettier && npm run lint",
     "build": "npx tsc",
     "jasmine": "jasmine",
     "dev": "npm run build && npm run jasmine",

@@ -1,7 +1,13 @@
-const myFunc = (num: number): number => {
-  return num * num;
-};
+import express from 'express';
 
-console.log('Hello world!')
+const app = express();
 
-export default myFunc;
+const port = 3000;
+
+app.get('/api', (req, res) => {
+  res.send('Hello, World!');
+});
+
+app.listen(port, () => {
+  console.log(`server started at localhost: ${port}`);
+});
