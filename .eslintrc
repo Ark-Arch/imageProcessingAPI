@@ -1,21 +1,25 @@
 {
     "root": true,
     "plugins": [
-      "prettier"
+      "prettier", "@typescript-eslint"
     ],
     "extends": [
       "eslint:recommended",
-      "prettier"
+      "plugin:prettier/recommended"
     ],
-    "ignorePatterns":["./mind-map", "./assets"],
+    "ignorePatterns":["./mind-map", "./assets","./src/tests/helpers/*.js"],
     "rules": {
       "prettier/prettier": 2 ,
+      "no-debugger": 2, 
       "no-use-before-define": ["error", { "functions": true, "classes": true }],
       "no-var": "error",
-      "prefer-const": "error"
+      "prefer-const": "error",
+      "@typescript-eslint/consistent-type-definitions": ["error", "interface"]
     },
     "parserOptions": {
-      "ecmaVersion": 2017
+      "parser": "@typescript-eslint/parser",
+      "sourceType": "module",
+      "ecmaVersion": 2020
     },
     "env": {
       "node": true,

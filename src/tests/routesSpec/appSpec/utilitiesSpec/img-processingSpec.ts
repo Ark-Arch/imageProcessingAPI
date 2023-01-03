@@ -1,4 +1,3 @@
-import sharp from 'sharp';
 import resizeImage from '../../../../routes/app/utilities/img-processing';
 
 interface ResizeMetadata {
